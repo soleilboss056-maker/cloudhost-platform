@@ -1,0 +1,15 @@
+# Render.com Deployment Blueprint Configuration
+services:
+  - type: web
+    name: cloudhost-platform
+    env: node
+    region: frankfurt # ou oregon, singapore, etc.
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000

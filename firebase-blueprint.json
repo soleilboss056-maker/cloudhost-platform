@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Accounts",
+      "description": "Registered CloudHost platform users",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "authProvider": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "email"]
+    },
+    "projects": {
+      "title": "Hosted Projects",
+      "description": "Render and CloudHost hosted projects",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "repoUrl": { "type": "string font-mono" },
+        "language": { "type": "string" },
+        "status": { "type": "string" },
+        "createdBy": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "language"]
+    },
+    "webhooks": {
+      "title": "Webhooks & Email Alerts",
+      "description": "Configured HTTP webhooks and email notification targets",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "url": { "type": "string" },
+        "notificationEmail": { "type": "string" },
+        "emailNotifications": { "type": "boolean" },
+        "enabled": { "type": "boolean" },
+        "createdBy": { "type": "string" }
+      },
+      "required": ["id", "url"]
+    }
+  }
+}

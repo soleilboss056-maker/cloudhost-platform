@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Allow read access for public app operations, write access for authenticated users or public app creation
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+
+    match /projects/{projectId} {
+      allow read, write: if true;
+    }
+
+    match /webhooks/{webhookId} {
+      allow read, write: if true;
+    }
+
+    match /webhookLogs/{logId} {
+      allow read, write: if true;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "CloudHost - Platforme d'Hébergement de Code",
+  "description": "Plateforme complète pour héberger et déployer vos projets Python, Node.js, GitHub et multi-langages avec commandes d'installation, variables d'environnement, logs en direct et domaine public.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

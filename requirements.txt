@@ -1,0 +1,7 @@
+# Requirements file for CloudHost Platform
+# Prevents Render Python builder errors if Python runtime is accidentally selected on Render.com
+fastapi>=0.110.0
+uvicorn>=0.28.0
+gunicorn>=21.2.0
+requests>=2.31.0
+python-dotenv>=1.0.1
